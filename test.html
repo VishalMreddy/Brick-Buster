@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="./brick.css">
+    <script src="brick.js" defer></script>
+</head>
+<body>
+    <img class="background" src="./bg.jpg" alt="" width="43%" height="0%">
+    <h4 class="ndplayer" id="player-name"></h4>
+    <div class="brick-container">
+        <div class="brick active"></div>
+        <div class="brick active"></div>
+        <div class="brick active"></div>
+        <div class="brick active"></div>
+        <div class="brick active"></div>
+        <div class="brick active"></div>
+        <div class="brick active"></div>
+        <div class="brick active"></div>
+        <div class="brick active"></div>
+        <div class="brick active"></div>
+        <div class="brick active"></div>
+        <div class="brick active"></div>
+        <div class="brick active"></div>
+        <div class="brick active"></div>
+        <div class="brick active"></div>
+    </div>
+      <div class="paddle" > </div>
+      <div class="ball_container">
+            <audio class="music"  src="../practice/music.mp3" preload></audio>
+          <div class="ball"></div>
+      </div>
+</body>
+<script>
+    var PlayerName=localStorage.getItem("player-name")
+    document.querySelector("#player-name").textContent=PlayerName
+</script>
+</html>
